@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item">
+                        <a href="index.html">Schedule</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="teachers.html">Teachers</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <img src="images/search icon.png" alt="search">
+            </div>
+            <div class="logo">
+                <img src="images/iitu 1.png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <!-- нужно настроить h1 чтобы менялось название через спрингбут -->
+    <section class="group"></section>
+    <h1 class="group-name">Group-name</h1>
+    <!-- тоже нужно настроить h2 -->
+    <h2 class="speciality">Speciality
+        <div class="icon">
+            <img src="images/icon.png" alt="icon">
+        </div>
+    </h2>
+
+    <!-- дни недели -->
+    <div class="table">
+    <div class="tabs">
+        <input type="radio" name="tabs" id="monday" checked="checked">
+        <label for="monday">Monday</label>
+        <div class="tab">
+            <!-- таблица с данными понедельника -->
+            <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Course name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <!-- сделать выделение free-time -->
+                  <tr class="active-row">
+                    <!-- данные введенные с бд -->
+                    <td>12:10-13:00</td> 
+                    <td>Lecture</td>
+                    <td>Philosophy</td>
+                    <td>Bataeva S.(Senior Lecturer)</td>
+                    <td>423Б</td>
+                  </tr>
+                  <tr>
+                    <td>13:10-14:00</td>
+                    <td>Lecture</td>
+                    <td>Computer Networking Basics</td>
+                    <td>Bakytov D.B. (Senior Lecturer)</td>
+                    <td>422Б</td>
+                  </tr>
+                  <tr class="active-row">
+                    <td>14:10-15:00</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>15:10-16:00</td>
+                    <td>Practice</td>
+                    <td>Philosophy</td>
+                    <td>Bataeva S.(Senior Lecturer)</td>
+                    <td>417Б</td>
+                  </tr>
+                  <tr>
+                    <td>16:10-17:00</td>
+                    <td>Practice</td>
+                    <td>Philosophy</td>
+                    <td>Bataeva S.(Senior Lecturer)</td>
+                    <td>417Б</td>
+                  </tr>
+                  <tr>
+                    <td>17:10-19:20</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>19:30-20:20</td>
+                    <td>СРСП</td>
+                    <td>Computer Networking Basics</td>
+                    <td>Bakytov D.B. (Senior Lecturer)</td>
+                    <td>Online</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        
+        </div>
+
+        <input type="radio" name="tabs" id="tuesday">
+        <label for="tuesday">Tuesday</label>
+        <div class="tab">
+            <!-- таблица с данными вторника -->
+            <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Course name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- данные введенные с бд -->
+                    <td>10:00-10:50</td> 
+                    <td>Lecture</td>
+                    <td>Object-Oriented programming (Java)</td>
+                    <td>Dzholdasbayev S.. (senior Lecturer, master)</td>
+                    <td>423Б</td>
+                  </tr>
+                  <tr>
+                    <td>11:00-11:50</td>
+                    <td>Practice</td>
+                    <td>Discrete mathematics</td>
+                    <td>Zhanabekov Z.O. (senior Lecturer, master)</td>
+                    <td>406</td>
+                  </tr>
+                  <tr>
+                    <td>12:10-13:00</td>
+                    <td>Practice</td>
+                    <td>Discrete mathematics</td>
+                    <td>Zhanabekov Z.O. (senior Lecturer, master)</td>
+                    <td>903</td>
+                  </tr>
+                  <tr class="active-row">
+                    <td>13:10-18:10</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>18:30-19:20</td>
+                    <td>СРСП</td>
+                    <td>Philosophy</td>
+                    <td>Bataeva S.(Senior Lecturer)</td>
+                    <td>417Б</td>
+                  </tr>
+                  <tr>
+                    <td>19:30-20:20</td>
+                    <td>СРСП</td>
+                    <td>Object-Oriented programming (Java)</td>
+                    <td>Dzholdasbayev S.. (senior Lecturer, master)</td>
+                    <td>Online</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+
+        <input type="radio" name="tabs" id="wednesday">
+        <label for="wednesday">Wednesday</label>
+        <div class="tab">
+            <!-- таблица с данными среды -->
+            <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Course name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- данные введенные с бд -->
+                <tr class="active-row">
+                    <td>10:00-16:00</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                  <tr>
+                    <td>16:10-17:00</td>
+                    <td>Practice</td>
+                    <td>Physical Culture</td>
+                    <td>Vekselman O.M. (senior Physical Education Trainer, CMS)</td>
+                    <td>Sports Hall</td>
+                  </tr>
+                  <tr>
+                    <td>17:10-18:00</td>
+                    <td>Practice</td>
+                    <td>Physical Culture</td>
+                    <td>Vekselman O.M. (senior Physical Education Trainer, CMS)</td>
+                    <td>Sports Hall</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+        </div> 
+
+        <input type="radio" name="tabs" id="thursday">
+        <label for="thursday">Thursday</label>
+        <div class="tab">
+            <!-- таблица с данными четверга -->
+            <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Course name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- данные введенные с бд -->
+                <tr class="active-row">
+                    <td>10:00-16:00</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                  <tr>
+                    <td>16:10-17:00</td>
+                    <td>Practice</td>
+                    <td>Basics of the Linux operating system</td>
+                    <td>Coursera_Linux</td>
+                    <td>Online</td>
+                  </tr>
+                  <tr>
+                    <td>17:10-18:00</td>
+                    <td>Practice</td>
+                    <td>Basics of the Linux operating system</td>
+                    <td>Coursera_Linux</td>
+                    <td>Online</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+
+        <input type="radio" name="tabs" id="friday">
+        <label for="friday">Friday</label>
+        <div class="tab">
+            <!-- таблица с данными пятницы -->
+            <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Course name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- данные введенные с бд -->
+                <tr>
+                    <td>10:00-10:50</td>
+                    <td>Practice</td>
+                    <td>Computer Networking Basics</td>
+                    <td>Sanim D.. (tutor, -)</td>
+                    <td>707</td>
+                </tr>
+                <tr>
+                    <td>11:00-11:50</td>
+                    <td>Lab</td>
+                    <td>Computer Networking Basics</td>
+                    <td>Sanim D.. (tutor, -)</td>
+                    <td>707</td>
+                </tr>
+                <tr>
+                    <td>12:10-13:00</td>
+                    <td>Practice</td>
+                    <td>Computer Networking Basics</td>
+                    <td>Sanim D.. (tutor, -)</td>
+                    <td>707</td>
+                </tr>
+                <tr>
+                    <td>13:10-14:00</td>
+                    <td>Practice</td>
+                    <td>Object-Oriented programming (Java)</td>
+                    <td>Amantay A.. (tutor, -)</td>
+                    <td>425Б</td>
+                </tr>
+                <tr>
+                    <td>14:10-15:00</td>
+                    <td>Practice</td>
+                    <td>Object-Oriented programming (Java)</td>
+                    <td>Amantay A.. (tutor, -)</td>
+                    <td>425Б</td>
+                </tr>
+                <tr>
+                    <td>15:10-16:00</td>
+                    <td>Practice</td>
+                    <td>Object-Oriented programming (Java)</td>
+                    <td>Amantay A.. (tutor, -)</td>
+                    <td>425Б</td>
+                </tr>
+                <tr class="active-row"> 
+                    <td>16:10-20:20</td>
+                    <td>Free-Time</td>
+                    <td></td>
+                    <td></td>
+                    <td>-</td>
+                </tr>
+                <tr class="active-row"> 
+                    <td>20:30-21:20</td>
+                    <td>СРСП</td>
+                    <td>Discrete mathematics</td>
+                    <td>Alimzhanova Z.M. (assistant Professor, С.Ph-M.S.)</td>
+                    <td>Online</td>
+                </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+
+        <input type="radio" name="tabs" id="saturday">
+        <label for="saturday">Saturday</label>
+        <div class="tab">
+            <!-- таблица с данными субботы -->
+            <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Course name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- данные введенные с бд -->
+                <tr>
+                    <td>08:00-08:50</td>
+                    <td>Practice</td>
+                    <td>Physics</td>
+                    <td>Boshkaev K. (professor, D.F.S.)</td>
+                    <td>303</td>
+                </tr>
+                <tr>
+                    <td>09:00-09:50</td>
+                    <td>Practice</td>
+                    <td>Physics</td>
+                    <td>Boshkaev K. (professor, D.F.S.)</td>
+                    <td>303</td>
+                </tr>
+                <tr class="active-row">
+                    <td>10:00-10:50</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>11:00-11:50</td>
+                    <td>Lecture</td>
+                    <td>Discrete mathematics</td>
+                    <td>Alimzhanova Z.M. (assistant Professor, С.Ph-M.S.)</td>
+                    <td>700</td>
+                </tr>
+                <tr class="active-row">
+                    <td>12:10-13:00</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>15:10-16:00</td>
+                    <td>Practice</td>
+                    <td>Physics</td>
+                    <td>Boshkaev K. (professor, D.F.S.)</td>
+                    <td>301</td>
+                </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <input type="radio" name="tabs" id="sunday">
+        <label for="sunday">Sunday</label>
+        <div class="tab">
+            <!-- таблица с данными воскресенья -->
+
+            <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Course name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- данные введенные с бд -->
+                
+                <tr class="active-row">
+                    <td>08:00-21:20</td>
+                    <td>Free-Time</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
